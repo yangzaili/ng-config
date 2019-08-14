@@ -1,0 +1,271 @@
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* first-see start */
+.jumbotron {
+    height: 336px;
+    padding: 0;
+    margin-bottom: 0;
+    background: url('../../assets/images/workshopsbg.png') center center no-repeat;
+    background-size: cover ;
+}
+
+.jumbotron .container h2 {
+    font-size: 42px;
+    margin-top: 155px;
+    font-weight: bold;
+    color: rgba(232,237,240);
+}
+
+.jumbotron .container p {
+    font-size: 24px;
+    color: rgba(255,255,255);
+}
+
+@media (max-width: 1200px) {
+    .jumbotron {
+        height: 300px;
+    }
+
+    .jumbotron .container h2 {
+        font-size: 38px;
+        font-weight: 600;
+        margin-top: 120px;
+    }
+
+    .jumbotron .container p {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .jumbotron {
+        height: 250px;
+    }
+
+    .jumbotron .container h2 {
+        font-size: 26px;
+        font-weight: 600;
+        margin-top: 100px;
+    }
+
+    .jumbotron .container p {
+        font-size: 15px;
+    }
+}
+/* first-see end */
+
+
+/* workshops-list START */
+@media(min-width:1200px){
+    .plan .col-lg-2 {
+        width: 20%;
+        /* padding: 0; */
+    }
+
+    .plan .col-lg-7{
+        width: 55%;
+    }
+
+    .plan .col-lg-3 {
+        width: 25%;
+        padding: 0;
+    }
+}
+
+.row {
+    width: 100%;
+    margin-left: 0;
+}
+
+.ws-list {
+    width: 100%;
+    background-color: rgba(242,242,242);
+    padding: 60px 0;
+}
+
+.plan {
+    height: auto;
+    min-height: 135px;
+    background-color: rgba(255, 255, 255); 
+    margin-bottom: 30px;
+    padding: 25px 25px 5px 25px;
+}
+
+/* plan 左边部分 开始 */
+.detail {
+    padding-right: 0px;
+}
+
+.detail .p-clock {
+    font-size: 16px;
+    color: #555;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.detail .p-date {
+    font-size: 15px;
+    color: #999;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 5300;
+    /* line-height: 1.4; */
+}
+
+.detail .p-addr {
+    font-size: 14px;
+    color: #999;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 500;
+    /* line-height: 1.4; */
+}
+
+/* plan 左边部分 结束 */
+
+
+/* plan 中间部分 开始 */
+.act-title p {
+    font-size: 20px;
+    color: #555;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+}
+/* plan 中间部分 结束 */
+
+
+/* plan 右边部分 开始 */
+.speakers a {
+    display: block;
+    width: 90px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.thumbnail {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.per-img {
+    width: 88px;
+    height: 72px;
+    overflow: hidden;
+}
+.per-img img {
+    width: 88px;
+}
+
+.person p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 600;
+    color: rgba(75,75,75);
+    margin-top: 5px;
+
+}
+/* plan 右边部分 开始 */
+/* workshops-list END */
+
+
+/* footer上面的attend/register条 */
+.attend {
+    height: 130px;
+    width: 100%;
+    display:flex;
+    align-items:center; 
+    background-color: aqua;
+    background-image: url('../../assets/images/workshops/attend-bg.jpg');
+}
+
+.attend .attend-con {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* background-color: #555; */
+}
+
+.attend-con span {
+    font-size: 24px;
+    line-height: 46px;
+    color: rgba(51,51,51);
+    font-weight: bold;
+}
+
+.attend-con a {
+    margin-left: 20px;
+}
+
+
+
+
+@media(max-width:768px) {
+    /* workshop plan 自适应 开始 */
+    .plan {
+        text-align: center;
+    }
+
+    .detail .p-clock {
+        font-size: 14px;
+        color: #555;
+        font-family: proxima-nova,sans-serif;
+        font-weight: 600;
+        /* line-height: 1.4; */
+    }
+    
+    .detail .p-date {
+        font-size: 13px;
+        color: #999;
+        font-family: proxima-nova,sans-serif;
+        font-weight: 500;
+        /* line-height: 1.4; */
+    }
+    
+    .detail .p-addr {
+        font-size: 12px;
+        color: #999;
+        font-family: proxima-nova,sans-serif;
+        font-weight: 500;
+        /* line-height: 1.4; */
+    }
+
+    .act-title p {
+        font-size: 16px;
+        color: #555;
+        font-family: proxima-nova,sans-serif;
+        font-weight: 550;
+        /* line-height: 1.4; */
+    }
+    /* workshop plan 自适应 结束 */
+
+
+    /* workshop attend 自适应 开始 */
+    .attend .attend-con {
+        display: flex;       
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        /* width: 100%; */
+    }
+
+    .attend-con .reg-btn {
+        /* text-align: center; */
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .attend-con span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    /* workshop attend 自适应 结束 */
+}

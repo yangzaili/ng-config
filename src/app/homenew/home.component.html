@@ -1,0 +1,64 @@
+<app-header></app-header>
+
+<div class="banner"></div>
+
+<div class="subscribe">
+  <div class="slogan">MASTER THE ESSENTIALS OF RXJS TO STEP UP YOUR CAREER!</div>
+  <div><button type="button" class="btn btn-primary btn-lg">GET THE PDF</button></div>
+</div>
+
+<!----------  PHOTOS  start ------------>
+<div class="media_gallery">
+  <div class="site_title title_color_white">
+    <span>A LOOK BACK</span><br>Highlights from ng-conf 2018
+  </div>
+  <div class="imgArr" *ngFor="let item of photoArr;">
+    <div ngClass="{{item.className}}"><img src="{{item.imgUrl}}"></div>
+  </div>
+  <div class="more_photo_button"><button type="button" class="btn btn-primary btn-lg">MORE
+      PHOTOS</button></div>
+</div>
+<!----------  PHOTOS  end   ------------>
+<!----------  TICKET  start ------------>
+<div class="subscribe">
+  <div class="slogan">STAY UP TO DATE & SIGN UP TO WIN A FREE TICKET</div>
+  <div class="input-group mb-3" style="width:30%;">
+    <input type="text" class="form-control" style="height:50px;" placeholder="Enter Your Email"
+      aria-label="Enter Your Email" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <button (click)="getdata();" type="button" class="btn btn-primary btn-lg">GET UPDATES</button>
+    </div>
+  </div>
+</div>
+<!----------  TICKET  end   ------------>
+<!----------  videos  start ------------>
+<div class="media_gallery">
+  <div class="site_title title_color_white">
+    <span>VIDEOS</span><br>Watch videos from ng-conf 2018.
+  </div>
+  <div class="imgArr" *ngFor="let item of photoArr;">
+    <div ngClass="{{item.className}}"><img src="{{item.imgUrl}}"></div>
+  </div>
+  <div class="more_photo_button"><button type="button" class="btn btn-primary btn-lg">MORE
+      VIDEOS</button></div>
+</div>
+<!----------  videos  end   ------------>
+<!----------  BLOG  start   ------------>
+<div class="blog">
+  <div class="site_title title_color_gray">
+    <span>BLOG</span><br>News & articles from the ng-conf team.
+  </div>
+  <div class="blog_list">
+    <a class="content_box" *ngFor="let item of blogArr">
+      <p><img src="{{item.imgUrl}}"></p>
+      <div class="blog_inform">
+        <div class="blog_time">{{item.blogTime}}</div>
+        <div class="blog_content">{{item.blogTitle}}</div>
+      </div>
+    </a>
+  </div>
+</div>
+<!----------  BLOG  end   ------------>
+
+
+<app-footer></app-footer>

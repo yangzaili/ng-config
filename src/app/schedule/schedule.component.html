@@ -1,0 +1,48 @@
+<app-header></app-header>
+<div class="schedule">
+    <div class="first-see">
+        <p class="p-title">SCHEDULE</p>
+        <p>ng-conf 2019 Schedule - Click on links below for full details. 
+            *Please note Monday and Tuesday workshops require a separate ticket*
+        </p>
+    </div>
+
+    <!-- schedule start -->
+    <div class="act-plan">
+        <div class="date">
+            <ul id="myTab" class="nav nav-tabs" role="tablist">
+                <li *ngFor="let sche of schedule; index as i" class="{{ i==0?'active':'' }}">
+                    <a href="#day{{ i }}" role="tab" data-toggle="tab">{{ sche.day }}</a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- 选项卡面板 开始 -->
+        <div id="myTabContent" class="tab-content">
+            
+            <div 
+            *ngFor="let sche of schedule; index as i" 
+            id="day{{ i }}" 
+            class="{{ i==0?'tab-pane fade in active':'tab-pane fade' }}">
+                <div class="plan-list">
+                    <div class="plan" *ngFor="let plan of sche.planlist">
+                        <div class="time">{{plan.time}}</div>
+                        <div class="intro">
+                            <a href="javascript:;" class="theme">{{plan.theme}}</a>
+                            <div class="persons">
+                                <a href="javascript:;" *ngFor="let person of plan.persons">{{ person.name }}, </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 选项卡面板 结束 -->
+
+    </div>
+    <!-- schedule start -->
+</div>
+
+<!-- <div class="test" style="width: 10rem; height: 10rem; background-color:red;"></div> -->
+
+<app-footer></app-footer>

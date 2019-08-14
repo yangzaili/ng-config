@@ -1,0 +1,36 @@
+<app-header></app-header>
+<!-- speakers start -->
+<div class="speakers">
+  <!-- 进入speakers第一眼看到的文字和背景图片 -->
+  <div class="first-see">
+    <p class="p-title">SPEAKERS</p>
+    <p>Top Angular Developers from Google & Around the World</p>
+  </div>
+
+  <!-- speakers-list start -->
+  <div class="speakers-list">
+    <div class="speaker" *ngFor="let speaker of speakers; index as i">
+      <div class="person">
+        <a routerLink="#">
+          <div class="spe-img">
+            <img src="./assets/images/speakers/{{speaker.img}}" alt="person">
+          </div>
+          <div class="spe-desc">
+            <p class="desc-name">{{speaker.name}}</p>
+            <p class="desc-con">{{speaker.content}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- speakers-list start -->
+
+</div>
+<!-- speakers start -->
+
+
+
+<app-footer></app-footer>

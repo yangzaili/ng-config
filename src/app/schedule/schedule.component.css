@@ -1,0 +1,163 @@
+/* first-see start */
+.first-see {
+    width: 100%;
+    height: calc(334/68.3*1rem);
+    background-color: red;
+    background: url('../../assets/images/workshopsbg.png') no-repeat center center;
+    text-align: center;
+    padding: calc(160/68.3*1rem) 10% calc(85/68.3*1rem) 10%;
+}
+
+.first-see .p-title {
+    font-size: calc(40/68.3*1rem);
+    font-weight: bold;
+    color: rgba(232,237,240);
+}
+
+.first-see p {
+    font-size: calc(23/68.3*1rem);
+    font-weight: 500;
+    color: rgba(232,237,240);  
+}
+
+@media (max-width: 1200px) {
+    .first-see {
+        height: 300px;
+        padding: 120px 10% 0 10%;
+    }
+
+    .first-see .p-title {
+        font-size: 38px;
+        font-weight: 600;
+    }
+
+    .first-see p {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-see {
+        height: 250px;
+        padding: 100px 10% 0 10%;
+    }
+
+    .first-see .p-title {
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .first-see p {
+        font-size: 15px;
+    }
+}
+/* first-see end */
+
+
+
+/* act-plan start */
+.act-plan {
+    width: 100%;
+    height: auto;
+    background-color: rgba(242,242,242);
+    padding: calc(60/68.3*1rem) 20%;
+}
+
+.date {
+    width: 100%;
+}
+
+.date .nav-tabs {
+    border-bottom: 0;
+    display: flex;
+    justify-content: center; 
+}
+.nav-tabs>li.active>a {
+    border: 0;
+    color: #555;
+}
+
+.date li a {
+    font-size: calc(20/68.3*1rem);
+    font-weight: 500;
+    color: #bbb;
+}
+
+
+
+
+.plan-list {
+    width: 100%;
+    background-color: #fff;
+    min-height: calc(200/68.3*1rem);
+    margin-top: calc(50/68.3*1rem);
+    padding: calc(40/68.3*1rem) 2%;
+}
+
+.plan {
+    display: flex; 
+    min-height: calc(80/68.3*1rem);
+
+}
+
+
+.plan .time {
+    width: 26%;
+    font-size: calc(18/68.3*1rem);
+    color: #aaa;
+    font-weight: 500;
+}
+
+
+.plan .intro {
+    width: 70%;
+}
+
+.plan .intro .theme {
+    text-decoration: none;
+    color: #666;
+    font-size: calc(18/68.3*1rem);
+    font-weight: 600;
+
+}
+
+.plan .intro .persons {
+    margin-top: calc(5/68.3*1rem);
+}
+
+.plan .intro .persons a {
+    color: #777;
+    font-size: calc(16/68.3*1rem);
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .act-plan {
+        padding: calc(60/68.3*1rem) 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .plan {
+        display: flex;
+        flex-direction: column;
+        min-height: calc(120/68.3*1rem);
+    }
+    .act-plan {
+        padding: calc(60/68.3*1rem) 10%;
+    }
+
+    .plan .time {
+        width: 100%;
+        font-size: calc(18/68.3*1rem);
+        text-align: center;
+    }
+    
+    
+    .plan .intro {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+/* act-plan end */

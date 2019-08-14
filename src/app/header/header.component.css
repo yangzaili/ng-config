@@ -1,0 +1,30 @@
+/* 导航条样式 开始 */
+.navbar {
+    /* padding: 0 10%; */
+    padding: 0 5%;
+}
+
+/* 导航条左边 开始 */
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand img {
+    margin-top: 7px;
+    width: 40px;
+    height: 40px;
+    /* margin-left: 100px; */
+}
+
+.navbar-header .navbar-text {
+    margin-left: 5px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+/* 导航条右边 开始 */
+/* .navbar-right {
+    margin-right: 75px;
+} */
+
+/* 导航条样式 结束 */

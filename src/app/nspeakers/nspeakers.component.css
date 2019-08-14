@@ -1,0 +1,159 @@
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/* first-see start */
+.first-see {
+    width: 100%;
+    height: 4.87rem;
+    background-color: #fff;
+    background: url('../../assets/images/speakers/speakers-bg.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.first-see p {
+    text-align: center;
+    font-size: 0.35rem;
+    color: rgba(255,255,255);
+}
+
+.first-see .p-title {
+    font-size: 0.62rem;
+    padding-top: 2.34rem;
+    font-weight: bold;
+    color: rgba(232,237,240); 
+}
+
+@media (max-width: 1200px) {
+    .first-see {
+        height: 300px;
+    }
+
+    .first-see .p-title {
+        font-size: 38px;
+        font-weight: 600;
+        padding-top: 120px;
+    }
+
+    .first-see p {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-see {
+        height: 250px;
+    }
+
+    .first-see .p-title {
+        font-size: 26px;
+        font-weight: 600;
+        padding-top: 100px;
+    }
+
+    .first-see p {
+        font-size: 15px;
+    }
+}
+/* first-see end */
+
+
+/* speakers-list start */
+.speakers-list {
+    width: 100%;
+    height: auto;
+    background-color: rgba(242,242,242);
+    padding: 0.88rem 2rem 0.29rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.speaker {
+    width: 23.5%;
+    margin-left: 0.1rem;
+    box-sizing: border-box;
+}
+
+.speaker:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.speaker a {
+    display: block;
+    /* width: 260px; */
+    width: 100%;
+    height: 4.97rem;
+    border: 1px solid gray;
+    background-color: white;
+    
+    margin-bottom: 0.878rem;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+/* speakers img */
+.spe-img {
+    width: 100%;
+    height: 3.07rem;
+    overflow: hidden;
+}
+
+.spe-img img {
+    width: 100%;
+}
+
+/* speakers describe */
+.spe-desc {
+    text-align: center;
+}
+
+.spe-desc .desc-name {
+    font-size: 0.29rem;
+    color: #333;
+    line-height: 12px;
+    font-weight: bold;
+    margin: 0.22rem auto;
+}
+
+.spe-desc .desc-con {
+    font-size: 0.24rem;
+    color: #999;
+    font-weight: 500;
+}
+
+@media (max-width: 767px) {
+    /* .spe-desc .desc-con {
+        display: none;
+        font-size: 0.24rem;
+        transform:scale(.5);
+    } */
+    .speaker {
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+  
+    .speaker a {
+        height: 9.94rem;      
+        margin-bottom: 1.756rem;
+    }
+
+    .spe-img {
+        height: 6.14rem;
+    }
+
+    .spe-desc .desc-name {
+        font-size: 0.58rem;
+        margin: 0.44rem auto;
+    }
+    
+    .spe-desc .desc-con {
+        font-size: 0.48rem;
+    }
+}
+/* speakers-list end */

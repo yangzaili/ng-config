@@ -1,0 +1,105 @@
+<app-header></app-header>
+
+<!-- sessions start -->
+<div class="sessions">
+  <!-- 进入workshops第一眼看到的文字和背景图片 -->
+  <div class="first-see">
+    <p class="p-title">SESSIONS</p>
+    <p>Dates and times subject to change.</p>
+  </div>
+
+  <!-- activity-plan start -->
+  <div class="act-plan">
+    <!-- 选项卡菜单-->
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
+      <li class="active"><a href="#day1" role="tab" data-toggle="tab">WED, MAY 1</a></li>
+      <li><a href="#day2" role="tab" data-toggle="tab">THU, MAY 2</a></li>
+      <li><a href="#day3" role="tab" data-toggle="tab">WED, MAY 1</a></li>
+    </ul>
+    <!-- 选项卡面板 开始 -->
+    <div id="myTabContent" class="tab-content">
+      <!-- day1 start -->
+      <div class="tab-pane fade in active" id="day1">
+        <div class="act-list">
+          <div class="plan" *ngFor="let session of sessions; index as i">
+            <div class="detail">
+              <p class="p-clock">{{session.clock}} <br>
+                <span class="p-date">{{session.date}}</span> </p>
+              <p class="p-addr">{{session.addr}}</p>
+            </div>
+
+            <div class="act-title">
+              <p class="p-title">{{session.title}}</p>
+            </div>
+
+            <div class="speakers">
+              <a class="person fl" routerLink="#" *ngFor="let ses of session.person">
+                <div class="per-img">
+                  <img class="avator" src="./assets/images/sessions/{{ses.avator}}" alt="person">
+                </div>
+                <p class="name">{{ ses.name }}</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- day2 start -->
+      <div class="tab-pane fade" id="day2">
+        <div class="act-list">
+          <div class="plan" *ngFor="let session of sessions; index as i">
+            <div class="detail">
+              <p class="p-clock">{{session.clock}} <br>
+                <span class="p-date">{{session.date}}</span> </p>
+              <p class="p-addr">{{session.addr}}</p>
+            </div>
+            <div class="act-title">
+              <p class="p-title">{{session.title}}</p>
+            </div>
+
+            <div class="speakers">
+              <a class="person fl" routerLink="#" *ngFor="let ses of session.person">
+                <div class="per-img">
+                  <img class="avator" src="./assets/images/sessions/{{ses.avator}}" alt="person">
+                </div>
+                <p class="name">{{ ses.name }}</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- day3 start -->
+      <div class="tab-pane fade" id="day3">
+        <div class="act-list">
+          <div class="plan" *ngFor="let session of sessions; index as i">
+            <div class="detail">
+              <p class="p-clock">{{session.clock}} <br>
+                <span class="p-date">{{session.date}}</span> </p>
+              <p class="p-addr">{{session.addr}}</p>
+            </div>
+            <div class="act-title">
+              <p class="p-title">{{session.title}}</p>
+            </div>
+
+            <div class="speakers">
+              <a class="person fl" routerLink="#" *ngFor="let ses of session.person">
+                <div class="per-img">
+                  <img class="avator" src="./assets/images/sessions/{{ses.avator}}" alt="person">
+                </div>
+                <p class="name">{{ ses.name }}</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- 选项卡面板 开始 -->
+  </div>
+  <!-- activity-plan end -->
+</div>
+<!-- sessions end -->
+
+<app-footer></app-footer>

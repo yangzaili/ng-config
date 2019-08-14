@@ -1,0 +1,50 @@
+<app-header></app-header>
+<!-- workshops start -->
+<div class="workshops">
+  <!-- 进入workshops第一眼看到的文字和背景图片 -->
+  <div class="first-see">
+    <p class="p-title">WORKSHOPS</p>
+    <p>April 29th–30th. 1 and 2-day workshops, sold each day separately.</p>
+  </div>
+
+  <!-- workshop-list -->
+  <div class="ws-list">
+    <div class="container">
+      <div class="row">
+        <div class="plan" *ngFor="let workshop of workshops; index as i">
+          <div class="detail">
+            <p class="p-clock">{{workshop.clock}}
+              <span class="p-date">{{workshop.date}}</span> </p>
+            <p class="p-addr">{{workshop.addr}}</p>
+          </div>
+          <div class="act-title">
+            <p class="p-title">{{workshop.title}}</p>
+          </div>
+
+          <div class="speakers hidden-sm hidden-xs">
+            <a class="person fl" href="#" *ngFor="let per of workshop.person">
+              <div class="per-img">
+                <img class="avator" src="../../assets/images/workshops/{{per.avator}}" alt="person">
+              </div>
+              <p class="name">{{ per.name }}</p>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- workshop-list -->
+  <div class="attend">
+    <div class="attend-con">
+      <span>Attend a 1 or 2-day workshop.</span>
+      <a href="#" class="btn btn-primary btn-lg" role="button">Register</a>
+    </div>
+  </div>
+</div>
+<!-- workshops end -->
+
+
+
+
+<app-footer></app-footer>

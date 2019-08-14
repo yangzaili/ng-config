@@ -1,0 +1,60 @@
+<app-header></app-header>
+<!-- workshops start -->
+<div class="workshops">
+  <!-- 进入workshops第一眼看到的文字和背景图片 -->
+  <div class="jumbotron">
+    <div class="container">
+      <h2 class="p-title text-center">WORKSHOPS</h2>
+      <p class="text-center">April 29th–30th. 1 and 2-day workshops, sold each day separately.</p>
+    </div>
+  </div>
+
+
+  <!-- workshop-list -->
+  <div class="ws-list">
+    <div class="container">
+      <div class="row">
+        <div class="plan col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1"
+          *ngFor="let workshop of workshops; index as i">
+
+          <div class="row">
+            <div class="detail col-lg-2 col-md-4 col-sm-4 col-xs-12">
+              <p class="p-clock">{{workshop.clock}}</p>
+              <p class="p-date">{{workshop.date}}</p>
+              <p class="p-addr">{{workshop.addr}}</p>
+            </div>
+
+            <div class="act-title col-lg-7 col-md-8 col-sm-8 col-xs-12">
+              <p class="p-title">{{workshop.title}}</p>
+            </div>
+
+            <div class="speakers hidden-md hidden-sm hidden-xs col-lg-3">
+              <div class="row">
+                <a href="#" *ngFor="let per of workshop.person" class="thumbnail person fl col-lg-6 col-md-6">
+                  <div class="per-img">
+                    <img class="avator img-responsive" src="../../assets/images/workshops/{{per.avator}}" alt="person">
+                  </div>
+                  <p class="name">{{ per.name }}</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- workshop-list -->
+  <div class="attend">
+    <div class="attend-con">
+      <span>Attend a 1 or 2-day workshop.</span>
+      <a href="#" class="btn btn-primary btn-lg reg-btn" role="button">Register</a>
+    </div>
+  </div>
+</div>
+<!-- workshops end -->
+
+
+
+
+<app-footer></app-footer>

@@ -1,0 +1,77 @@
+.first-see {
+    /* background: round url('../../assets/images/ncbg.png');
+    width: 100%; */
+    overflow: hidden;
+    background-color: rgba(31, 14, 58);
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* .transbox {
+    background-color: #000;
+
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -99;
+  } */
+
+/* 背景城市 */
+/* .bg {
+    background: url('../../assets/images/ncbg.png');
+    background-repeat: round;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: -100;
+    left: 0;
+    top: 0;
+    
+} */
+
+
+
+.textcon {
+    text-align: center;
+}
+
+.textcon img {
+    width: 280px;
+    height: 302px;
+    /* margin-top: 120px; */
+    margin-top: 127px;
+}
+
+.textcon h1 {
+    font-size: 44px;
+    /* font-size: 39px; */
+    color: rgba(186,214, 232);
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.textcon p {
+    font-size: 30px;
+    color: rgba(121,187, 232);
+    font-weight: bold;
+}
+
+.twobtn {
+    text-align: center;
+
+}
+
+.twobtn a {
+    margin: 10px;
+}
+

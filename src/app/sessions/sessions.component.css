@@ -1,0 +1,239 @@
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* first-see start */
+.first-see {
+    width: 100%;
+    height: calc(334/68.3*1rem);
+    background-color: #fff;
+    background: url('../../assets/images/workshopsbg.png') center center no-repeat;
+    background-size: cover;
+}
+
+.first-see p {
+    text-align: center;
+    font-size: calc(24/68.3*1rem);
+    color: rgba(255,255,255);
+}
+
+.first-see .p-title {
+    font-size: calc(42/69.3*1rem);
+    padding-top: calc(160/69.3*1rem);
+    font-weight: bold;
+    color: rgba(232,237,240);
+}
+
+@media (max-width: 1200px) {
+    .first-see {
+        height: 300px;
+    }
+
+    .first-see .p-title {
+        font-size: 38px;
+        font-weight: 600;
+        padding-top: 120px;
+    }
+
+    .first-see p {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-see {
+        height: 250px;
+    }
+
+    .first-see .p-title {
+        font-size: 26px;
+        font-weight: 600;
+        padding-top: 100px;
+    }
+
+    .first-see p {
+        font-size: 15px;
+    }
+}
+/* first-see end */
+
+
+/* 活动选项卡菜单 开始 */
+.act-plan {
+    width: 100%;
+    height: auto;
+    padding: calc(60/68.3*1rem) 12.5%;
+    background-color: rgba(242,242,242);
+}
+
+.act-plan .nav-tabs {
+    border: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+.nav-tabs>li.active>a {
+    border: 0;
+    color: #555;
+}
+
+
+.nav-tabs>li>a {
+    font-size: calc(22/68.3*1rem);
+    font-size: 500;
+    color: #b3b3b3;
+}
+
+/* .nav-tabs li:last-child {
+    padding-bottom: calc(50/68.3*1rem);
+} */
+/* 活动选项卡菜单 结束 */
+
+
+/* act-list start */
+.act-list {
+    width: 100%;
+    margin-top: calc(50/68.3*1rem);
+    background-color: rgba(242,242,242);
+}
+
+.plan {
+    width: 100%;
+    height: auto;
+    min-height: calc(135/68.3*1rem);
+    display: flex;
+    background-color: rgba(255, 255, 255);   
+    margin-bottom: calc(30/68.3*1rem);
+    padding: calc(25/68.3*1rem) calc(25/68.3*1rem) calc(5/68.3*1rem) calc(25/68.3*1rem);
+}
+
+.plan:last-child {
+    margin-bottom: 0;
+}
+
+/* 大格子中的左边详情-时间地点 */
+.detail {
+    width: 20%;
+    /* background-color: aqua; */
+    height: 100%;
+}
+
+.detail .p-clock {
+    font-size: calc(16/68.3*1rem);
+    color: #555;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.detail .p-date {
+    font-size: calc(17/68.3*1rem);
+    color: #999;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 500;
+}
+
+.detail .p-addr {
+    font-size: calc(15/68.3*1rem);
+    color: #999;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* 大格子中的中间部分-标题 */
+.act-title {
+    width: 55%;
+    height: 100%;
+    /* background-color: lightblue; */
+}
+
+.act-title p {
+    font-size: calc(20/68.3*1rem);
+    color: #555;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+
+/* 大格子中的右边部分-演讲嘉宾 */
+.speakers {
+    width: 25%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    
+}
+
+.speakers a {
+    display: block;
+    border: 1px solid #999;
+    width: calc(90/68.3*1rem);
+    margin-left: calc(15/68.3*1rem);
+    margin-bottom: calc(15/68.3*1rem);
+    text-decoration: none;
+}
+
+
+.per-img {
+    width: calc(90/68.3*1rem);
+    height: calc(72/68.3*1rem);
+    overflow: hidden;
+}
+.per-img img {
+    width: calc(90/68.3*1rem);
+}
+
+.person p {
+    text-align: center;
+    font-size: calc(15/68.3*1rem);
+    line-height: calc(17/68.3*1rem);
+    font-weight: 600;
+    color: rgba(75,75,75);
+    margin-top: calc(5/68.3*1rem);
+}
+
+@media (max-width: 992px) {
+    .speakers {
+        display: none;
+    }
+
+    .detail {
+        width: 33.3%;
+    }
+
+    .act-title {
+        width: 66.6%;
+    }
+}
+
+@media (max-width: 768px) {
+    .plan {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .speakers {
+        display: none;
+    }
+
+    .detail {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .act-title {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+}
+/* act-list end */
+
+

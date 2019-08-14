@@ -1,0 +1,112 @@
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.footer {
+    width: 100%;
+    min-height:calc(325/68.3*1rem) ;
+    background-color: rgba(34, 34, 34);
+    /* overflow: hidden; */
+    padding: calc(60/68.3*1rem) calc(120/68.3*1rem) calc(60/68.3*1rem) calc(120/68.3*1rem);
+}
+
+.footer-con {
+    /* min-height: calc(210/68.3*1rem); */
+    height: 100%;
+}
+
+/* 左边的 logo */
+.logo {
+    height: 100%;
+}
+
+.logo img {
+    width: calc(120/68.3*1rem);
+    height: calc(120/68.3*1rem);
+    margin-top: calc(-5/68.3*1rem);
+}
+
+/* 中间的 日期 */
+.date {
+    margin-left: calc(40/68.3*1rem);
+    width: calc(210/68.3*1rem);
+    height: 100%;
+}
+
+.date p {
+    font-size: calc(18/68.3*1rem);
+    line-height: 1.5;
+    font-weight: 600;
+    color: rgba(157, 157, 157);
+    
+}
+
+.date p a {
+    text-decoration: none;
+    color: rgba(157, 157, 157);
+}
+
+/* 右边的 主要部分 链接 */
+.links {
+    width: calc(695/68.3*1rem);
+    height: 100%;
+}
+
+.links a {
+    /* width: auto;
+    height: calc(35/68.3*1rem); */
+    font-size: calc(17/68.3*1rem);
+    font-weight: 500;
+    margin-bottom: calc(25/68.3*1rem);
+    margin-right: calc(12/68.3*1rem);
+}
+
+/* 以下两个media， 解决在宽度放缩过程中的跳跃问题，通过缩小右边的尺寸 */
+@media (max-width: 1093px) {
+    .links {
+        width: calc(680/68.3*1rem);
+        height: 100%;
+    }
+}
+@media (max-width: 870px) {
+    .links {
+        width: calc(670/68.3*1rem);
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .logo img {
+        width: calc(200/68.3*1rem);
+        height: calc(200/68.3*1rem);
+        margin-top: calc(-5/68.3*1rem);
+    }
+    .date {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: calc(20/68.3*1rem);
+    }
+    .date p {
+        font-size: calc(30/68.3*1rem);
+        line-height: 1.5;
+        font-weight: 600;
+        color: rgba(157, 157, 157);
+        
+    }
+    .links {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+}
